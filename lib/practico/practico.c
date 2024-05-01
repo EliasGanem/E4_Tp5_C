@@ -10,10 +10,10 @@
  */
 int32_t suma(int32_t A,int32_t B)
 {
-    // reemplazar el código de abajo con la solución
-    (void)A;
-    (void)B;
-    return 0;
+    int32_t S;
+    S = A + B;
+
+    return S;
 }
 
 /**
@@ -25,10 +25,16 @@ int32_t suma(int32_t A,int32_t B)
  */
 int64_t sumatoria(int32_t n,const int32_t *b)
 {
-    // reemplazar el código de abajo con la solución
-    (void)n;
-    (void)b;
-    return 0;
+   int64_t A = 0;
+   int32_t i = 0;
+
+   if ( i < n)
+   {
+    A = A + b[i];
+    i ++;
+   }
+   
+    return A;
 }
 
 /**
