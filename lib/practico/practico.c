@@ -46,10 +46,26 @@ int64_t sumatoria(int32_t n,const int32_t *b)
  */
 int32_t posicion_maximo(int32_t n,const int32_t *b)
 {
-    // reemplazar el código de abajo con la solución
-    (void)n;
-    (void)b;
-    return 0;
+    int32_t k = 0;
+    int32_t M = 0;
+
+    if (n>1)
+    {
+       M = b[k];
+
+       for (int32_t i = 1; i < n; i++)
+       {
+        if (M < b[k])
+        {
+           M = b[i];
+           k = i; 
+        }
+       }
+          
+    }
+    
+
+    return k;
 }
 
 /**
