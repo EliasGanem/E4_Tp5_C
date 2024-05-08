@@ -53,13 +53,13 @@ int32_t posicion_maximo(int32_t n,const int32_t *b)
 
        for (int32_t i = 1; i < n; i++)
        {
-        if (M < b[k])
-        {
-           M = b[i];
-           k = i; 
-        }
-       }
-          
+            if (M < b[i])
+            {
+            M = b[i];
+            k = i; 
+            }
+       }  
+
     }
     
     return k;
